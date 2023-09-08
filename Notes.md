@@ -1,5 +1,5 @@
 
-<h1>Handbook on Programming in ?????</h1>
+<h1>Handbook on Programming in C</h1>
 
 **AP Computer Science Principles 2023-2024**
 
@@ -66,7 +66,7 @@ ___
 
 # 1. Compiling and Running
 
-???
+Input "gcc -o FILEPATH.exe FILEPATH.c && ./FILEPATH.exe" in shell.
 
 
 
@@ -80,9 +80,15 @@ ___
 
 # 2. Data Types
 
-???
+| Datatype | Size | Description |
+|------|------|------|
+| r1c1 | r1c2 | r1c1 |
+| r2c1 | r2c2 | r2c1 |
+| r2c1 | r2c2 | r2c1 |
+| r2c1 | r2c2 | r2c1 |
 
-```LANGUAGE_HERE
+
+```C
 
 ```
 
