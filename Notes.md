@@ -80,12 +80,12 @@ ___
 
 # 2. Data Types
 
-| Datatype | Size | Description |
-|------|------|------|
-| r1c1 | r1c2 | r1c1 |
-| r2c1 | r2c2 | r2c1 |
-| r2c1 | r2c2 | r2c1 |
-| r2c1 | r2c2 | r2c1 |
+| Datatype | Size | Description | Format Specifier|
+|------|------|------|------|
+| int | 2 or 4 bytes | Stores whole numbers, without decimals | %d or %i |
+| float | 4 bytes | Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits | %f |
+| double | 8 bytes | Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits | %lf	|
+| char | 1 byte | Stores a single character/letter/number, or ASCII values | %c |
 
 
 ```C
