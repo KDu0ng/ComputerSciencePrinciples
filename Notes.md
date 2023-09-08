@@ -87,6 +87,7 @@ ___
 | double | 8 bytes | Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits | %lf	|
 | char | 1 byte | Stores a single character/letter/number, or ASCII values | %c |
 
+Example code:
 
 ```C
 int myNum = 5;             // Integer (whole number)
@@ -122,7 +123,10 @@ printf("%.2f\n", myFloatNum); // Only show 2 digits
 printf("%.4f", myFloatNum);   // Only show 4 digits
 ```
 **Input**
+
 The scanf() function takes two arguments: the format specifier of the variable (%d in the example above) and the reference operator (&myNum), which stores the memory address of the variable.
+
+The scanf() function also allow multiple inputs (an integer and a character in the following example):
 
 ```C
 // Create an int and a char variable
