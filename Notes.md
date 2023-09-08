@@ -89,7 +89,14 @@ ___
 
 
 ```C
+int myNum = 5;             // Integer (whole number)
+float myFloatNum = 5.99;   // Floating point number
+char myLetter = 'D';       // Character
 
+// Print variables
+printf("%d\n", myNum);
+printf("%f\n", myFloatNum);
+printf("%c\n", myLetter);
 ```
 
 
@@ -104,11 +111,36 @@ ___
 
 # 3. Console I/O
 
-???
+If you want to remove the extra zeros (set decimal precision), you can use a dot (.) followed by a number that specifies how many digits that should be shown after the decimal point:
 
+```C
+float myFloatNum = 3.5;
 
+printf("%f\n", myFloatNum); // Default will show 6 digits after the decimal point
+printf("%.1f\n", myFloatNum); // Only show 1 digit
+printf("%.2f\n", myFloatNum); // Only show 2 digits
+printf("%.4f", myFloatNum);   // Only show 4 digits
+```
+**Input**
+The scanf() function takes two arguments: the format specifier of the variable (%d in the example above) and the reference operator (&myNum), which stores the memory address of the variable.
 
+```C
+// Create an int and a char variable
+int myNum;
+char myChar;
 
+// Ask the user to type a number AND a character
+printf("Type a number AND a character and press enter: \n");
+
+// Get and save the number AND character the user types
+scanf("%d %c", &myNum, &myChar);
+
+// Print the number
+printf("Your number is: %d\n", myNum);
+
+// Print the character
+printf("Your character is: %c\n", myChar);
+```
 
 ___
 
