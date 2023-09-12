@@ -6,9 +6,10 @@ int main(void) {
   const double pi = 3.14159;
   
   //Input radius
+  int scanhappy = 0;
   printf("Enter radius: ");
   double radius = 0;
-  scanf("%lf", &radius);
+  scanhappy = scanf("%lf", &radius);
   
   //Math
   double circumference = 2 * pi * radius;
@@ -17,4 +18,4 @@ int main(void) {
   //Output
   printf("The Radius of the circle = %.3lf\nThe Area of the circle = %.3lf\nThe Circumference of the circle = %.3lf", radius, area, circumference);
 }
-//gcc -o prog54c.exe prog54c.c && ./prog54c.exe
+//gcc -o 54c.exe 54c.c && ./54c.exe

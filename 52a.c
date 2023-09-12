@@ -1,15 +1,17 @@
 #include <stdio.h>
 
 int main(void) {
+  int scanhappy = 0;
+  
   //Input length
   printf("Enter length: ");
   int length = 0;
-  scanf("%d", &length);
+  scanhappy = scanf("%d", &length);
 
   //Input width
   printf("Enter width: ");
   int width = 0;
-  scanf("%d", &width);
+  scanhappy = scanf("%d", &width);
 
   //Math
   int area = length * width;
@@ -18,4 +20,4 @@ int main(void) {
   //Output
   printf("The area is %d and the perimeter is %d", area, perimeter);
 }
-//gcc -o prog52a.exe prog52a.c && ./prog52a.exe
+//gcc -o 52a.exe 52a.c && ./52a.exe
