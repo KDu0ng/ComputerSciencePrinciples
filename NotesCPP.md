@@ -1,8 +1,8 @@
-<h1>Handbook on Programming in ?????</h1>
+<h1>Handbook on Programming in C++</h1>
 
 **AP Computer Science Principles 2023-2024**
 
-FirstName LastName
+Kevin Duong
 
 <!-- This is a comment (which will not be displayed in the live file);
 replace all "???" with your own text. -->
@@ -225,10 +225,25 @@ ___
 
 # 7. Decision Structures
 
-???
+C++ has the following conditional statements:
 
+Use "if" to specify a block of code to be executed, if a specified condition is true
+Use "else" to specify a block of code to be executed, if the same condition is false
+Use "else if" to specify a new condition to test, if the first condition is false
+Use "switch" to specify many alternative blocks of code to be executed
 
-
+Example:
+```C++
+int x = 20;
+int y = 18;
+if (x > y) {
+  cout << "x is greater than y";
+} else if (x == y) {
+  cout << "x equals y";
+} else {
+  cout << "x is less than y";
+}
+```
 
 
 ___
@@ -239,9 +254,14 @@ ___
 
 # 8. Conditional Operators
 
-???
+C++ supports the usual logical conditions from mathematics:
 
-
+Less than: a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+Equal to a == b
+Not Equal to: a != b
 
 
 
@@ -253,7 +273,12 @@ ___
 
 # 9. Logic Operators
 
-???
+
+| Operator | Name	| Description	| Example	| 
+|----------|------|-------------|---------|
+| && | Logical and | Returns true if both statements are true | x < 5 &&  x < 10	| 
+|  //	 | Logical or	| Returns true | if one of the statements is true | x < 5 // x < 4	| 
+| !	| Logical not	| Reverse the result, returns false if the result is true | !(x < 5 && x < 10) | 
 
 
 
@@ -267,12 +292,65 @@ ___
 
 # 10. Advanced Decision Structures
 
-???
+Use the "switch" statement to select one of many code blocks to be executed.
 
+Syntax:
 
+```C++
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+```
+This is how it works:
 
+The switch expression is evaluated once.
+The value of the expression is compared with the values of each case.
+If there is a match, the associated block of code is executed.
+The break and default keywords are optional, and will be described later in this chapter.
+The example below uses the weekday number to calculate the weekday name:
 
+```C++
+int day = 4;
+switch (day) {
+  case 1:
+    cout << "Monday";
+    break;
+  case 2:
+    cout << "Tuesday";
+    break;
+  case 3:
+    cout << "Wednesday";
+    break;
+  case 4:
+    cout << "Thursday";
+    break;
+  case 5:
+    cout << "Friday";
+    break;
+  case 6:
+    cout << "Saturday";
+    break;
+  case 7:
+    cout << "Sunday";
+    break;
+}
+// Outputs "Thursday" (day 4)
+```
 
+There is also a short-hand if else, which is known as the ternary operator because it consists of three operands. It can be used to replace multiple lines of code with a single line. It is often used to replace simple if else statements:
+
+```C++
+  int time = 20;
+  string result = (time < 18) ? "Good day." : "Good evening.";
+  cout << result;
+```
 ___
 
 
