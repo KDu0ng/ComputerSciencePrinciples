@@ -364,12 +364,33 @@ ___
 
 # 11. String Methods
 
-???
+To get the length of a string, use the length() or size() function:
+```C++
+string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+cout << "The length of the txt string is: " << txt.length();
+```
+To change the value of a specific character in a string, refer to the index number, and use single quotes:
+```C++
+string myString = "Hello";
+myString[0] = 'J';
+cout << myString;
+// Outputs Jello instead of Hello
+```
 
+Use substr(start pos, length) to grab a part of a string:
+```C++
+string myString = "Hello";
+cout << myString.substr(1, 3);
+// Outputs ell
+```
 
-
-
-
+Use find(str, start pos) to search for a string:
+```C++
+string myString = "Hello";
+string f = "ell";
+cout << myString.find(f);
+// Outputs 1
+```
 ___
 
 
@@ -378,10 +399,12 @@ ___
 
 # 12. Random Generation
 
-???
-
-
-
+rand() returns a value between 0 and RAND_MAX:
+```C++
+v1 = rand() % 100;         // v1 in the range 0 to 99
+v2 = rand() % 100 + 1;     // v2 in the range 1 to 100
+v3 = rand() % 30 + 1985;   // v3 in the range 1985-2014 
+```
 
 
 ___
@@ -392,12 +415,50 @@ ___
 
 # 13. Looping Structures
 
-???
+The while loop loops through a block of code as long as a specified condition is true:
+```C++
+while (condition) {
+  // code block to be executed
+}
+```
+
+In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:
+```C++
+int i = 0;
+while (i < 5) {
+  cout << i << "\n";
+  i++;
+}
+```
+
+The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+```C++
+do {
+  // code block to be executed
+}
+while (condition);
+```
 
 
+When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+```C++
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+```
+  
+Statement 1 is executed (one time) before the execution of the code block.
 
+Statement 2 defines the condition for executing the code block.
 
+Statement 3 is executed (every time) after the code block has been executed.
 
+The example below will print the numbers 0 to 4:
+```C++
+for (int i = 0; i < 5; i++) {
+  cout << i << "\n";
+}
+```
 ___
 
 
@@ -406,10 +467,88 @@ ___
 
 # 14. Functions/Methods
 
-???
+To create (often referred to as declare) a function, specify the name of the function, followed by parentheses ().
+
+To call a function, write the function's name followed by two parentheses () and a semicolon ;
+
+In the following example, myFunction() is used to print a text (the action), when it is called:
+```C++
+Inside main, call myFunction():
+
+// Create a function
+void myFunction() {
+  cout << "I just got executed!";
+}
+
+int main() {
+  myFunction(); // call the function
+  return 0;
+}
+
+// Outputs "I just got executed!"
+```
 
 
+Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma:
 
+The following example has a function that takes a string called fname as parameter. When the function is called, we pass along a first name, which is used inside the function to print the full name:
+```C++
+void myFunction(string fname) {
+  cout << fname << " Refsnes\n";
+}
+
+int main() {
+  myFunction("Liam");
+  myFunction("Jenny");
+  myFunction("Anja");
+  return 0;
+}
+
+// Liam Refsnes
+// Jenny Refsnes
+// Anja Refsnes
+```
+
+
+The void keyword, used in the previous examples, indicates that the function should not return a value. If you want the function to return a value, you can use a data type (such as int, string, etc.) instead of void, and use the return keyword inside the function:
+```C++
+int myFunction(int x) {
+  return 5 + x;
+}
+
+int main() {
+  cout << myFunction(3);
+  return 0;
+}
+
+// Outputs 8 (5 + 3)
+```
+
+
+You can also pass a reference to the function. This can be useful when you need to change the value of the arguments:
+```C++
+void swapNums(int &x, int &y) {
+  int z = x;
+  x = y;
+  y = z;
+}
+
+int main() {
+  int firstNum = 10;
+  int secondNum = 20;
+
+  cout << "Before swap: " << "\n";
+  cout << firstNum << secondNum << "\n";
+
+  // Call the function, which will change the values of firstNum and secondNum
+  swapNums(firstNum, secondNum);
+
+  cout << "After swap: " << "\n";
+  cout << firstNum << secondNum << "\n";
+
+  return 0;
+}
+```
 
 
 ___
