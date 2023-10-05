@@ -35,6 +35,7 @@ ___
 - [15. Elementary Data Structures](#15-elementary-data-structures)
   - [15.1 Arrays/Lists](#151-arrayslists)
   - [15.2 Matrices](#152-matrices)
+  - [15.3 Structures](#153-structures)
 - [References](#references)
 
 <!-- 
