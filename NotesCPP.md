@@ -851,7 +851,7 @@ for (int i = 0; i < 2; i++) {
 }
 ```
 
-## Structures 15.3
+## 15.3 Structures
 
 Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a member of the structure.
 
