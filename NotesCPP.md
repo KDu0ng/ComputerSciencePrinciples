@@ -285,10 +285,10 @@ ___
 
 C++ has the following conditional statements:
 
-Use "if" to specify a block of code to be executed, if a specified condition is true
-Use "else" to specify a block of code to be executed, if the same condition is false
-Use "else if" to specify a new condition to test, if the first condition is false
-Use "switch" to specify many alternative blocks of code to be executed
+1. Use "if" to specify a block of code to be executed, if a specified condition is true
+2. Use "else" to specify a block of code to be executed, if the same condition is false
+3. Use "else if" to specify a new condition to test, if the first condition is false
+4. Use "switch" to specify many alternative blocks of code to be executed
 
 Example:
 ```C++
@@ -376,7 +376,6 @@ This is how it works:
 The switch expression is evaluated once.
 The value of the expression is compared with the values of each case.
 If there is a match, the associated block of code is executed.
-The break and default keywords are optional, and will be described later in this chapter.
 The example below uses the weekday number to calculate the weekday name:
 
 ```C++
