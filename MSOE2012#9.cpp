@@ -57,7 +57,7 @@ int main() {
       c++;
     }
 
-    //cout << subtract << " " << result << " " << biggest << "\n";
+    cout << subtract << " " << result << " " << biggest << "\n";
     result -= subtract;
     
     for (int i = biggest + 1; i < 7; i++) {
