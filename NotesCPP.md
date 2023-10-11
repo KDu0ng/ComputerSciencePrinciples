@@ -798,6 +798,7 @@ To get the size of an array, you can use the sizeof() operator:
 int myNumbers[5] = {10, 20, 30, 40, 50};
 cout << sizeof(myNumbers);
 ```
+However, This returns the size in bytes. Divide it by sizeOf(datatype) to find actual length.
 
 ## 15.2 Matrices
 
