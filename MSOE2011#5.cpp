@@ -35,6 +35,7 @@ int main() {
   while (abs(y) > 0.001) {
     y = f(x);
     cout << y << "\n";
+    //cout << "f(x) = " << y << " \nfprime(x) = " << fprime(x) << "\n"; 
     x = x - y / fprime(x);
     if (abs(y) > 0.001) {
       cout << "Refined zero: f(" << x << ") = ";
