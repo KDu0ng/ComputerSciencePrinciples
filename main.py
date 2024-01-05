@@ -1,5 +1,3 @@
-#python main.py
-
 import os
 import rsa
 import base64
