@@ -53,6 +53,15 @@ def main():
       
     end = time.perf_counter()
     print(f"Sorting time: {end - start} seconds")
+
+    start = time.perf_counter()
+    print("\nQuicksort\nID   Score")
+    sort = sorts.Quicksort(data.copy())
+    for n in sort:
+      print(f"{n.id}  {n.score}")
+
+    end = time.perf_counter()
+    print(f"Sorting time: {end - start} seconds")
       
   except Exception as e:
     print("Error:", e)
