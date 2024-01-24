@@ -62,6 +62,15 @@ def main():
 
     end = time.perf_counter()
     print(f"Sorting time: {end - start} seconds")
+
+    start = time.perf_counter()
+    print("\nMergesort\nID   Score")
+    sort = sorts.Mergesort(data.copy())
+    for n in sort:
+      print(f"{n.id}  {n.score}")
+
+    end = time.perf_counter()
+    print(f"Sorting time: {end - start} seconds")
       
   except Exception as e:
     print("Error:", e)
